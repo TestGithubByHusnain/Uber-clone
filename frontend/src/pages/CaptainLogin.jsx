@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Nextridelogodark from '../assets/Nextridelogodark.png'
 
 const Captainlogin = () => {
    const [email, setEmail]=useState('')
@@ -18,7 +19,7 @@ const Captainlogin = () => {
   return (
    <div className="p-7 h-screen flex flex-col justify-between">
    <div>
-       <img className="w-24 " src="https://sdmntprukwest.oaiusercontent.com/files/00000000-be80-6243-ba23-183d48f205af/raw?se=2025-09-24T21%3A04%3A32Z&sp=r&sv=2024-08-04&sr=b&scid=d03c73ea-7033-5d6d-b977-8d5d350aa87a&skoid=5939c452-ea83-4420-b5b4-21182254a5d3&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-24T17%3A19%3A16Z&ske=2025-09-25T17%3A19%3A16Z&sks=b&skv=2024-08-04&sig=7n09dkquHNWW2U3yPYNjyD03zyy/FCgjo1i5hJoYfgU%3D" alt="Nextridelogo" />
+     <img className="w-24 " src={Nextridelogodark} alt="NexRide dark logo" />
       <form onSubmit={(e)=>{
         submitHandler(e)
       }}>
